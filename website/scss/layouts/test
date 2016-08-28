@@ -1,0 +1,86 @@
+  <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img class="img-circle img-responsive center-block" src="img/dj-reim.jpg"/>
+                        <p>Dit kunnen alleen Nederlanders, het mooiste feest in de Franse Alpen op wintersport gebied!</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img class="img-circle img-responsive center-block" src="img/dytmer-dutchweek.jpg"/>
+                        <p>Dit kunnen alleen Nederlanders, het mooiste feest in de Franse Alpen op wintersport gebied!</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img class="img-circle img-responsive center-block" src="img/dytmer-dutchweek.jpg"/>
+                        <p>Dit kunnen alleen Nederlanders, het mooiste feest in de Franse Alpen op wintersport gebied!</p>
+                    </div>
+                </div>
+                
+            </div>  
+
+
+            .fa-cloud{
+    color: white;
+    display: block;
+    line-height: 50px;
+    height: 50px;
+    margin-top: 30px;
+}
+
+.fa-users {
+    color: white;
+    display: block;
+    line-height: 50px;
+    height: 50px;
+    margin-top: 30px;
+}
+
+<section class="well">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-xs-12">        
+                    <img src="img/dj-reim.jpg" class="img-circle">
+                    <h4>test test<h4>
+                    <h5>test test</h5>
+                                     
+                </div>
+                <div class="row">
+                <div class="col-xs-12 hidden-lg hidden-md">        
+                    <p>Dit kunnen alleen Nederlanders, het mooiste feest in de Franse Alpen op wintersport gebied!</p>                    
+                </div>
+                </div>
+                <div class="col-lg-4 col-xs-12">
+                    <img src="img/reynaud-dutchweek.jpg" class="img-circle">
+                    <h4>test test</h4>
+                    <h5>test test</h5>
+                                       
+                </div>
+                <div class="row">
+                <div class="col-xs-12 hidden-lg hidden-md">        
+                    <p>Dit kunnen alleen Nederlanders, het mooiste feest in de Franse Alpen op wintersport gebied!</p>                    
+                </div>
+                </div>
+                <div class="col-lg-4 col-xs-12">
+                    <img src="img/dytmer-dutchweek.jpg" class="img-circle">
+                    <h4>test test</h4>
+                    <h5>test test</h5>
+                    
+                </div>
+                <div class="row">
+                <div class="col-xs-12 hidden-lg hidden-md">        
+                    <p>Dit kunnen alleen Nederlanders, het mooiste feest in de Franse Alpen op wintersport gebied!</p>                    
+                </div>
+                </div> 
+            </div>
+         <div class="row">
+                <div class="col-lg-4 col-xs-12 hidden-xs">        
+                    <p>Dit kunnen alleen Nederlanders, het mooiste feest in de Franse Alpen op wintersport gebied!</p>                    
+                </div>
+                <div class="col-lg-4 col-xs-12 hidden-xs">
+                    <p>Elk jaar weer een feestje, ons hoogtepunt in het jaar ligt letterlijk en figuurlijk in Val Thorens op 3000 meter!</p>                   
+                </div>
+                <div class="col-lg-4 col-xs-12 hidden-xs">
+                    <p>Nederlandse carnaval op de piste in Zuid Frankrijk, hoeveel mooier wil je het hebben!</p>  
+                </div> 
+            </div>   
+            
+        </div>
+    </section> <!-- end section5 -->

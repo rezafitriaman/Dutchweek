@@ -1,0 +1,657 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic");
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+/*
+
+	Dutchweek.com met Sass en Bootstrap Theme
+	Author:	Reza Fitriaman
+	Version:	0.0.1
+
+*/
+/* LAYOUTS - Page layouts styles */
+/* carousel */
+/* line 8, ../scss/layouts/_header.scss */
+.slide1, .slide2, .slide3 {
+  min-height: 600px;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+/* line 14, ../scss/layouts/_header.scss */
+.slide1 {
+  background-image: url("../img/6000x4000.jpg");
+}
+
+/* line 17, ../scss/layouts/_header.scss */
+.slide2 {
+  background-image: url("../img/6000x40001.jpg");
+}
+
+/* line 20, ../scss/layouts/_header.scss */
+.slide3 {
+  background-image: url("../img/6000x4002.jpg");
+}
+
+/* Carousel Fade Effect */
+/* line 24, ../scss/layouts/_header.scss */
+.carousel.carousel-fade .item {
+  -webkit-transition: opacity 1s linear;
+  -moz-transition: opacity 1s linear;
+  -ms-transition: opacity 1s linear;
+  -o-transition: opacity 1s linear;
+  transition: opacity 3s linear;
+  opacity: .5;
+}
+
+/* line 32, ../scss/layouts/_header.scss */
+.carousel.carousel-fade .active.item {
+  opacity: 1;
+}
+
+/* line 36, ../scss/layouts/_header.scss */
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+/* line 42, ../scss/layouts/_header.scss */
+.carousel-overlay {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  left: 0;
+  top: 10%;
+}
+
+/* end carousel */
+/* Nav */
+/* line 55, ../scss/layouts/_header.scss */
+.navbar {
+  margin-bottom: 0px;
+}
+
+/* line 59, ../scss/layouts/_header.scss */
+ul.navbar-left {
+  text-transform: uppercase;
+}
+
+/* line 63, ../scss/layouts/_header.scss */
+.navbar-default {
+  background-color: #fa6900;
+  border-color: transparent;
+}
+
+/* line 68, ../scss/layouts/_header.scss */
+.jumbotron .container-fluid.top {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+/* line 74, ../scss/layouts/_header.scss */
+.navbar-default .navbar-nav > li > a {
+  font-weight: bold;
+  font-size-adjust: 14px;
+  color: #ffffff;
+}
+
+/* line 79, ../scss/layouts/_header.scss */
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* line 84, ../scss/layouts/_header.scss */
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: transparent;
+}
+
+/* line 89, ../scss/layouts/_header.scss */
+.fa-home, .fa-film, .fa-camera-retro, .fa-h-square {
+  padding-right: 0.5em;
+}
+
+/* End Nav */
+/* Font */
+/* line 95, ../scss/layouts/_header.scss */
+h2, h4, h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* line 101, ../scss/layouts/_header.scss */
+button, a {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 105, ../scss/layouts/_header.scss */
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+/* line 110, ../scss/layouts/_header.scss */
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+/* line 115, ../scss/layouts/_header.scss */
+section div.container div.padding-top-20 p, section div.container div.padding-top-20 h6 {
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* End Font */
+/* section-top */
+/* line 124, ../scss/layouts/_header.scss */
+.color-block-white-top {
+  background-color: #fff;
+  padding-bottom: 0px;
+}
+
+/* line 129, ../scss/layouts/_header.scss */
+section.top .container .row img.top {
+  width: 250px;
+  height: auto;
+}
+
+/* line 134, ../scss/layouts/_header.scss */
+.fa-check-circle-o, .fa-phone {
+  color: #FF5900;
+}
+
+/* line 138, ../scss/layouts/_header.scss */
+section.top .container .row h6 {
+  color: #00A5F4;
+}
+
+/* line 142, ../scss/layouts/_header.scss */
+section.top, h4.top {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #00A5F4;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+/* line 150, ../scss/layouts/_header.scss */
+section.top div a {
+  text-decoration: none;
+}
+
+/* section-top */
+/* Jumbotron */
+/* line 157, ../scss/layouts/_header.scss */
+.img-centered {
+  margin: auto;
+}
+
+/* line 161, ../scss/layouts/_header.scss */
+img.polaroid {
+  width: 400px;
+}
+
+/* line 165, ../scss/layouts/_header.scss */
+.jumbotron {
+  padding-top: 20px;
+  padding-bottom: 100px;
+  background-image: url("../img/6000x4002.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 0px;
+}
+
+/* line 176, ../scss/layouts/_header.scss */
+.jumbotron-inner .container {
+  padding-top: 70px;
+}
+
+@media (max-width: 767px) {
+  /* line 182, ../scss/layouts/_header.scss */
+  .jumbotron {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-image: url("../img/6000x4002.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 0px;
+  }
+}
+/* line 195, ../scss/layouts/_header.scss */
+.jumbotron .container .row img {
+  width: 400px;
+}
+
+/* line 200, ../scss/layouts/_header.scss */
+div.container-fluid.top {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+/* line 205, ../scss/layouts/_header.scss */
+.jumbotron-inner h1 {
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(253, 129, 43, 0.47);
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+/* line 215, ../scss/layouts/_header.scss */
+.jumbotron-inner h5 {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background-color: rgba(253, 129, 43, 0.47);
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  /* line 225, ../scss/layouts/_header.scss */
+  .jumbotron .btn, .jumbotron .btn {
+    font-size: 12px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 231, ../scss/layouts/_header.scss */
+  .jumbotron h2, .jumbotron .h2 {
+    text-align: center !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 239, ../scss/layouts/_header.scss */
+  .jumbotron h4, .jumbotron .h4 {
+    text-align: center !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 247, ../scss/layouts/_header.scss */
+  .jumbotron .button-center, .jumbotron .button-center {
+    text-align: center !important;
+  }
+}
+/* line 253, ../scss/layouts/_header.scss */
+.polaroid-padding-top {
+  padding-top: 100px;
+}
+
+/* end jumbotron */
+/* start section */
+/* line 260, ../scss/layouts/_header.scss */
+section .container-fluid .row p.font-size-12 {
+  font-size: 12px;
+  position: absolute;
+}
+
+/* line 265, ../scss/layouts/_header.scss */
+.color-block-black {
+  background-color: #FD812B;
+  color: #ffffff;
+  padding-bottom: 180px;
+}
+
+/* line 271, ../scss/layouts/_header.scss */
+.color-block-blue {
+  background-color: #00A5F4;
+  padding-bottom: 180px;
+}
+
+/* line 276, ../scss/layouts/_header.scss */
+.color-block-brown {
+  background-color: #fff;
+  padding-bottom: 180px;
+  color: #000;
+}
+
+/* line 282, ../scss/layouts/_header.scss */
+.fa-cloud {
+  color: white;
+  line-height: 50px;
+  height: 50px;
+  padding-top: 80px;
+  margin-bottom: 70px;
+}
+
+/* line 290, ../scss/layouts/_header.scss */
+.fa-user-plus {
+  color: #000;
+  line-height: 50px;
+  height: 50px;
+  padding-top: 80px;
+  margin-bottom: 70px;
+}
+
+/* line 298, ../scss/layouts/_header.scss */
+.fa-music {
+  color: #00A5F4;
+  line-height: 50px;
+  height: 50px;
+  padding-top: 80px;
+  margin-bottom: 70px;
+}
+
+/* line 306, ../scss/layouts/_header.scss */
+body {
+  line-height: 1.9;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 311, ../scss/layouts/_header.scss */
+.padding-bottom-10 {
+  padding-bottom: 10px;
+}
+
+/* line 315, ../scss/layouts/_header.scss */
+.btn-info {
+  color: #fff;
+  background-color: #00A5F4;
+  border-color: #46b8da;
+}
+
+/* end section */
+/* start section2 */
+/* line 325, ../scss/layouts/_header.scss */
+.color-block-white {
+  background-color: #ffffff;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+/* line 331, ../scss/layouts/_header.scss */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* line 337, ../scss/layouts/_header.scss */
+.fa-cutlery {
+  margin-right: 1em;
+  color: #FD812B;
+}
+
+/* line 342, ../scss/layouts/_header.scss */
+.fa-book {
+  margin-right: 1em;
+  color: #00A5F4;
+}
+
+/* line 347, ../scss/layouts/_header.scss */
+h3, .h3 {
+  font-size: 24px;
+}
+
+/* line 352, ../scss/layouts/_header.scss */
+section .container .row img.img-thumbnail {
+  width: 350px;
+  padding-top: 10px;
+  padding-bottom: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  box-shadow: 5px 6px 14px 0px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 767px) {
+  /* line 365, ../scss/layouts/_header.scss */
+  section .container .row .btn-center {
+    text-align: center !important;
+  }
+}
+/* line 370, ../scss/layouts/_header.scss */
+section .container .row img.logo {
+  width: 170px;
+  padding-top: 60px;
+}
+
+/* line 376, ../scss/layouts/_header.scss */
+.btn-warning {
+  color: #fff;
+  background-color: #FD812B;
+  border-color: #FD812B;
+}
+
+/* end section2 */
+/* start section3 */
+/* line 392, ../scss/layouts/_header.scss */
+.color-block-purple {
+  background-color: #FD812B;
+  color: #fff;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+/* end section3 */
+/* start section4 */
+/* line 403, ../scss/layouts/_header.scss */
+.fa-smile-o {
+  margin-right: 1em;
+  color: #FD812B;
+}
+
+/* end section4 */
+/* start section5 */
+/* line 411, ../scss/layouts/_header.scss */
+section.well img.img-circle.lg {
+  width: 90px;
+  border: 5px solid #FFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.35);
+  float: left;
+  margin: 20px 10px 20px 0;
+  border-color: #FD812B;
+}
+
+/* line 420, ../scss/layouts/_header.scss */
+.tocenter {
+  margin: 0 auto;
+  display: inline;
+}
+
+/* line 425, ../scss/layouts/_header.scss */
+section.well img.img-circle.tocenter {
+  width: 90px;
+  border: 5px solid #FFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.35);
+  margin: 0 10px 0 0;
+  border-color: #FD812B;
+}
+
+/* line 433, ../scss/layouts/_header.scss */
+section.well .container .row h4.padding-top-40 {
+  padding-top: 40px;
+}
+
+/* line 437, ../scss/layouts/_header.scss */
+section.well div.container.hidden-xs.hidden-sm div.padding-top-20, section.well div.container.hidden-lg.hidden-md div.padding-top-20 {
+  margin: 0 0 30px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* line 445, ../scss/layouts/_header.scss */
+.fa-quote-left, .fa-quote-right {
+  color: #5BC0DE;
+}
+
+/* line 449, ../scss/layouts/_header.scss */
+.well {
+  margin-bottom: auto !important;
+}
+
+/* end section5 */
+/* start section5 */
+/* line 457, ../scss/layouts/_header.scss */
+.color-block-bglightblue {
+  background-color: #00A5F4;
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+/* line 462, ../scss/layouts/_header.scss */
+.color-block-bglightblue th, .color-block-bglightblue tbody {
+  font-weight: 700;
+}
+
+/* line 469, ../scss/layouts/_header.scss */
+.fa-check {
+  color: #FD812B;
+  margin-right: 1em;
+}
+
+/* line 474, ../scss/layouts/_header.scss */
+section h2.text-center, section .container .table.table {
+  color: #fff;
+}
+
+/* end section5 */
+/* start footer */
+/* line 481, ../scss/layouts/_header.scss */
+.color-block-orange {
+  background-color: #FD812B;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* line 488, ../scss/layouts/_header.scss */
+.fa-facebook-square, .fa-twitter-square, .fa-pinterest, .fa-facebook, .fa-twitter, .fa-pinterest-p {
+  color: #FFFFFF;
+}
+
+/* line 491, ../scss/layouts/_header.scss */
+span.blue {
+  color: #00A5F4;
+}
+
+/* line 495, ../scss/layouts/_header.scss */
+footer p {
+  color: #fff;
+}
+
+/* end footer */
+/* start index 2 */
+/* line 502, ../scss/layouts/_header.scss */
+.padding-top-10 {
+  padding-top: 20px;
+}
+
+/* end index 2 */
+/* start accommodatie */
+/* line 510, ../scss/layouts/_header.scss */
+a.hover:hover, a.hover:focus {
+  text-decoration: none;
+}
+
+/* line 514, ../scss/layouts/_header.scss */
+.fa-flag, .fa-users, .fa-wifi, .fa-map-marker, .fa-houzz, .fa-eur {
+  margin-right: 1em;
+  color: #30a8f0;
+}
+
+/* line 519, ../scss/layouts/_header.scss */
+.fa-tint {
+  margin-right: 0.90em;
+  margin-left: 0.10em;
+  color: #30a8f0;
+}
+
+/* line 525, ../scss/layouts/_header.scss */
+strong {
+  font-size: 24px;
+  color: #FD812B;
+}
+
+@media (max-width: 767px) {
+  /* line 535, ../scss/layouts/_header.scss */
+  .offer .offer-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+}
+/* line 544, ../scss/layouts/_header.scss */
+.offertitle {
+  height: 55px;
+  max-height: 70px;
+}
+
+/* line 550, ../scss/layouts/_header.scss */
+.offer {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* line 558, ../scss/layouts/_header.scss */
+.offer:hover {
+  -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+  -o-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
+  transform: rotate(-1deg);
+}
+
+/* line 567, ../scss/layouts/_header.scss */
+section.well div.container div.row h3 {
+  text-transform: none;
+  font-weight: 700;
+}
+/* line 571, ../scss/layouts/_header.scss */
+section.well div.offertitle h4 {
+  color: #FD812B;
+}
+/* line 574, ../scss/layouts/_header.scss */
+section.well div.list {
+  height: 113px;
+}
+
+/* line 579, ../scss/layouts/_header.scss */
+.fa-angle-right {
+  margin-left: 1em;
+}
+
+/* line 583, ../scss/layouts/_header.scss */
+.padding-bottom-20 {
+  padding-bottom: 10px;
+}
+
+/* start foto */
+/* line 589, ../scss/layouts/_header.scss */
+section.well img.img-thumbnail.foto {
+  width: auto;
+  padding-top: 10px;
+  padding-bottom: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  box-shadow: 5px 6px 14px 0px rgba(0, 0, 0, 0.3);
+}
+/* line 599, ../scss/layouts/_header.scss */
+section.well .modal .modal-content p.delen {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+/* end foto */
+/*tiitle per pagina */
+/* line 609, ../scss/layouts/_header.scss */
+.tittle-color {
+  color: #00A5F4;
+}
+
+/*tiitle per pagina */
